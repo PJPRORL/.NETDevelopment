@@ -1,0 +1,19 @@
+﻿global using AutoMapper;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.IdentityModel.Tokens;
+global using System.ComponentModel.DataAnnotations;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
+global using System.Text.Json.Serialization;
+global using TandartsPraktijkAPI.Data;
+global using TandartsPraktijkAPI.Data.Repository;
+global using TandartsPraktijkAPI.Data.UnitOfWork;
+global using TandartsPraktijkAPI.Dto;
+global using TandartsPraktijkAPI.Models;
+global using TandartsPraktijkAPI.Services;
+
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
