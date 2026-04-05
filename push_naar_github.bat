@@ -33,8 +33,12 @@ if errorlevel 1 (
     git remote add origin https://github.com/PJPRORL/.NETDevelopment.git
 )
 
-:: 5. Bestanden Pushing naar GitHub
-echo [5/5] Bestanden worden doorgestuurd naar GitHub...
+:: 5. Online wijzigingen (zoals een README) ophalen om conflicten te vermijden
+echo [5/6] Controleren of er online wijzigingen zijn en deze samenvoegen...
+git pull origin main --no-edit --allow-unrelated-histories
+
+:: 6. Bestanden Pushing naar GitHub
+echo [6/6] Bestanden worden doorgestuurd naar GitHub...
 git push -u origin main
 
 echo.
